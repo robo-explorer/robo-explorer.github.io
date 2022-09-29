@@ -45,27 +45,22 @@
           <h1 class="title is-1 publication-title">ALAN : Autonomously Exploring </br> Robotic Agents in the Real World </h1>
           <div class="is-size-4 publication-authors">
             <center>
-              Anonymous CoRL Submission </br>
-              Paper ID: 487
+              In Submission to ICRA </br>
+              <!-- Paper ID: 487 -->
             </center>
-            <!-- <span class="author-block">
-              <a href="https://markfzp.github.io/">Zipeng Fu</a><sup>*</sup><sup>1</sup>&nbsp;&nbsp;&nbsp;
-              <a href="https://ashish-kmr.github.io/">‪Ashish Kumar</a><sup>*</sup><sup>2</sup>&nbsp;&nbsp;&nbsp;
-              <a href="https://anag.me/">Ananye Agarwal</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
-              <a href="https://haozhi.io/">Haozhi Qi</a><sup>2</sup>&nbsp;&nbsp;&nbsp;
-              <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a><sup>2</sup>&nbsp;&nbsp;&nbsp;
-              <a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a><sup>1</sup>
-              <br /><sup>1</sup>Carnegie Mellon University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>UC Berkeley
-              <span class="brmod"><b>CVPR 2022</b></span>
-              <span class="brmod">(<a href="https://mula-workshop.github.io/"><b>Best Paper Award at Multimodal Learning Workshop</b></a>)</span>
-            </span> -->
+            <span class="author-block">
+              Russell Mendonca&nbsp;&nbsp;&nbsp;
+              Shikhar Bahl&nbsp;&nbsp;&nbsp;
+              Deepak Pathak&nbsp;&nbsp;&nbsp;
+              <br />Carnegie Mellon University
+            </span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="./resources/alan_corl.pdf"
+                <a href="./resources/2022_icra_alan.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -111,8 +106,22 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In order to build robotic agents that can autonomously operate in the real world, it is crucial to explore the environment. While it is possible to build agents that can learn without supervision, current methods struggle to scale to the real world. Thus, we propose, ALAN, an autonomously exploring robotic agent, that can perform many tasks in the real world with little training and interaction time. Our approach builds a shared model of the world, across all possible tasks, and continuously explores. We propose a novel intrinsic motivation reward that leverages both self-supervised agent-centric prediction as well environment-centric priors for visual change. We show our approach on a real world play kitchen setting, performing multiple manipulation tasks and showing much better exploratory performance than state-of-the-art methods.</p>
-        </div>
+            Robotic agents that operate autonomously in the real world need to continuously explore their environment and
+            learn from the data collected, with minimal human supervision.
+            While it is possible to build agents that can learn in such a
+            manner without supervision, current methods struggle to scale
+            to the real world. Thus, we propose ALAN, an autonomously
+            exploring robotic agent, that can perform many tasks in the real
+            world with little training and interaction time. This is enabled by
+            measuring environment change, which reflects object movement
+            and ignores changes in the robot position. We use this metric
+            directly as an environment-centric signal, and also maximize the
+            uncertainty of predicted environment change, which provides
+            agent-centric exploration signal. We evaluate our approach
+            on two different real-world play kitchen settings, enabling a
+            robot to efficiently explore and discover manipulation skills, and
+            perform tasks specified via goal images.       
+          </div>
       </div>
     </div>
   </div>
@@ -124,14 +133,14 @@
     <div class="column is-two-thirds">
       <h2 class="title is-3">Project Video</h2>
       <div class="publication-video">
-        <video controls src="./resources/narrated-video.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 80%; margin-bottom: 50px;">    
+        <video controls src="./resources/alan_icra_vid.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 80%; margin-bottom: 50px;">    
       </div>
     </div>
   </div>
 </section>
 
 
-<section class="section">
+<!-- <section class="section">
   <div class="row no-gutters">
       <div class="row no-gutters">
           <h2 style="text-align: center" class="title is-3"> Goal Reaching - Right Cabinet </h2>
@@ -146,11 +155,10 @@
         </div>
       </div>
   </div> 
-</section>
+</section> -->
 
-<section class="section">
+<!-- <section class="section">
   <h2 style="text-align: center" class="title is-3"> Exploration Behavior </h2>
-  <!-- <h2 style="text-align: center"> Exploration Behavior </h2> -->
   <div class="row no-gutters">
       <div class="row no-gutters">
           <div class="columns is-centered">
@@ -173,9 +181,9 @@
           </div>
       </div>
   </div> 
-</section>
+</section> -->
 
-<section class="section">
+<!-- <section class="section">
   <div class="row no-gutters">
       <div class="row no-gutters">
           <h2 style="text-align: center" class="title is-4"> Goal Reaching Comparisons - Right Cabinet </h2>
@@ -190,6 +198,6 @@
         </div>
       </div>
   </div> 
-</section>
+</section> -->
 </body>
 </html>
