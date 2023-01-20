@@ -134,27 +134,104 @@
   </div>
 </section>
 
+
+
+
+
+
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"> Achiever Performance </h3>
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">Agent and Environment Centric Exploration</h3>
         <tr>
         </tr>
         <tr>
           <td>
             <div class="content has-text-centered">
               <p style = "font-size: 20px">
-                After autonomous exploration the robot can perform tasks involving multiple objects in a zero-shot manner.
+                The agent utilizes environment change, both directly as an environment-centric signal, as well as 
+              modelling the change and taking actions that maximize uncertainty in change space, which provides agent-centric signal
+              </p>
+            </div>  
+            <div class="row">
+              <div class="col" style="text-align: center;">
+                <img class="center" src="./resources/figures/alan_method.png"  width="80%"></img>
+              </div>
+            </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">Environment Change Module</h3>
+        <tr>
+        </tr>
+        <tr>
+          <td>
+            <div class="content has-text-centered">
+              <p style = "font-size: 20px">
+                An example of the binary change image extracted from a pair of images, which detects pixels where change has occured. 
+              </p>
+            </div>  
+            <div class="row">
+              <div class="col" style="text-align: center;">
+                <img class="center" src="./resources/figures/ec_fig.png"  width="80%"></img>
+              </div>
+            </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"> Exploration Time-Lapse </h3>
+        <tr>
+        </tr>
+        <tr>
+          <td>
+            <div class="content has-text-centered">
+              <p style = "font-size: 20px">
+                ALAN gets better at manipulation by exploring how to interact with objects.
               </p>
             </div>  
             <div class="row">
               <div class="col" >            
-                  <video class="center" playsinline autoplay loop muted src="./resources/achievers/k2_achiever_2x.mp4" width="100%"
+                  <video class="center" playsinline  muted controls src="./resources/explorers/alan_rc_filmora_out.mp4" width="100%"
                          style="border-radius:10px; "></video>
               </div>
               <div class="col">
-                <video class="center" playsinline autoplay loop muted src="./resources/achievers/k1_achiever_2x.mp4" width="100%"
+                <video class="center" playsinline muted controls src="./resources/explorers/alan_knife_filmora_out.mp4" width="100%"
+                    style="border-radius:10px; "></video>
+                <!-- <img src="./resources/figures/strength.PNG" alt="Strength Results Table"  width="98%"> -->
+              </div>
+            </div>
+
+            <br>
+            
+            <div class="row">
+              <div class="col" >            
+                  <video class="center" playsinline muted controls src="./resources/explorers/alan_fridge_filmora_out.mp4" width="100%"
+                         style="border-radius:10px; "></video>
+              </div>
+              <div class="col">
+                <video class="center" playsinline muted controls src="./resources/explorers/alan_topshelf_filmora_out.mp4" width="100%"
                     style="border-radius:10px; "></video>
                 <!-- <img src="./resources/figures/strength.PNG" alt="Strength Results Table"  width="98%"> -->
               </div>
@@ -169,7 +246,42 @@
 </section>
 
 
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"> Achiever Performance </h3>
+        <tr>
+        </tr>
+        <tr>
+          <td>
+            <div class="content has-text-centered">
+              <p style = "font-size: 20px">
+                After autonomous exploration the robot can perform tasks involving multiple objects in a zero-shot manner using goal reaching.
+              </p>
+            </div>  
+            <div class="row">
+              <div class="col" >            
+                  <video class="center" playsinline autoplay loop controls src="./resources/achievers/k2_achiever_2x.mp4" width="100%"
+                         style="border-radius:10px; "></video>
+              </div>
+              <div class="col">
+                <video class="center" playsinline autoplay loop controls src="./resources/achievers/k1_achiever_2x.mp4" width="100%"
+                    style="border-radius:10px; "></video>
+                <!-- <img src="./resources/figures/strength.PNG" alt="Strength Results Table"  width="98%"> -->
+              </div>
+            </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
 
+
+<!--
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
@@ -179,76 +291,51 @@
           <td>
             <div class="content has-text-centered">
               <p style = "font-size: 20px">
-                Comparison of exploration performance
+                ALAN gets better at manipulation by exploring how to interact with the object
               </p>
             </div>  
 
             <div class="row">
               
               <div class="col">
-                <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"> Initial exploration </h3>
+                <h3 class="title is-3" style="text-align: center; padding-bottom: 10px; padding-top: 10px;"> Cabinet </h3>
        
-                <!-- <br> -->
-                <video class="center" playsinline autoplay muted controls src="./resources/explorers/alan_k2fridge_start.mp4" width="100%"
+                
+                <video class="center" playsinline autoplay muted controls src="./resources/explorers/alan_rc_filmora_out.mp4" width="50%"
                          style="border-radius:10px; "></video>
               </div>
 
               <div class="col">
-                <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"> Later exploration </h3>
-       
-                <!-- <br> -->
-                <video class="center" playsinline autoplay muted controls src="./resources/explorers/alan_k2fridge_end.mp4" width="100%"
+                <h3 class="title is-3" style="text-align: center; padding-bottom: 10px; padding-top: 10px; "> Knife </h3>
+      
+                <video class="center" playsinline autoplay muted controls src="./resources/explorers/alan_knife_filmora_out.mp4" width="50%"
                          style="border-radius:10px; "></video>
               </div>
-              
             </div>
             <br>
-            <div class="row">
-              <div class="col">
-                <!-- <br> -->
-                <video class="center" playsinline autoplay muted controls src="./resources/explorers/alan_knife_start.mp4" width="100%"
-                         style="border-radius:10px; "></video>
-              </div>
-
-              <div class="col">
-                <!-- <br> -->
-                <video class="center" playsinline autoplay muted controls src="./resources/explorers/alan_knife_end.mp4" width="100%"
-                         style="border-radius:10px; "></video>
-              </div>
-              
-            </div>
+           
 
             <br>
             <div class="row">
               <div class="col">
-                <!-- <br> -->
-                <video class="center" playsinline autoplay muted controls src="./resources/explorers/alan_rc_start.mp4" width="100%"
+                <h3 class="title is-3" style="text-align: center; padding-bottom: 10px; padding-top: 10px;"> Fridge </h3>
+                
+                <video class="center" playsinline autoplay muted controls src="./resources/explorers/alan_fridge_filmora_out.mp4" width="50%"
                          style="border-radius:10px; "></video>
               </div>
 
               <div class="col">
-                <!-- <br> -->
-                <video class="center" playsinline autoplay muted controls src="./resources/explorers/alan_rc_end.mp4" width="100%"
+                <h3 class="title is-3" style="text-align: center; padding-bottom: 10px; padding-top: 10px;"> Shelf </h3>
+                
+                <video class="center" playsinline autoplay muted controls src="./resources/explorers/alan_topshelf_filmora_out.mp4" width="50%"
                          style="border-radius:10px; "></video>
               </div>
+
               
             </div>
 
             <br>
-            <div class="row">
-              <div class="col">
-                <!-- <br> -->
-                <video class="center" playsinline autoplay muted controls src="./resources/explorers/alan_k2topshelf_start.mp4" width="100%"
-                         style="border-radius:10px; "></video>
-              </div>
-
-              <div class="col">
-                <!-- <br> -->
-                <video class="center" playsinline autoplay muted controls src="./resources/explorers/alan_k2topshelf_end.mp4" width="100%"
-                         style="border-radius:10px; "></video>
-              </div>
-              
-            </div>
+           
 
           </td>
         </tr>
@@ -256,6 +343,7 @@
     </div>
   </div>
 </section>
+-->
 
 <!-- 
 <section class="section">
